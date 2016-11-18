@@ -2,13 +2,15 @@
 <html lang="zh-cn">
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+	<meta http-equiv="Content-Security-Policy" content="style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
 	<meta name="format-detection" content="telephone=no">
 	<meta name="msapplication-tap-highlight" content="no">
 	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 	<title>斗牛</title>
 	<!-- Bootstrap -->
 	<link href="dist/css/bootstrap.css" rel="stylesheet">
+	<link href="dist/css/flat-ui.css" rel="stylesheet">
+
 </head>
 <body>
 	<div class="container">
@@ -37,6 +39,45 @@
 			<div class="visible-xs col-xs-2"></div>
 			<div class="col-sm-1"></div>
 		</div>
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-xs-4 col-sm-2">
+					<select id="first_select" class="form-control select select-primary"  data-toggle="select" tabindex="-1" title="">
+						
+					</select>
+			</div>
+			<div class="col-xs-4 col-sm-2">
+			
+					<select id="first_second" class="form-control select select-primary" data-toggle="select" tabindex="-1" title="">
+						
+					</select>
+			</div>
+
+			<div class="col-xs-4 col-sm-2">
+			
+					<select class="form-control select select-primary" data-toggle="select" tabindex="-1" title="">
+					
+					</select>
+			</div>
+			<!--换行显示xs -->
+			<div class="clearfix visible-xs"></div>
+			<div class="visible-xs col-xs-2"></div>
+			<div class="col-xs-4  col-sm-2">
+				
+					<select class="form-control select select-primary" data-toggle="select" tabindex="-1" title="">
+						
+					</select>
+			</div>
+
+			<div class="col-xs-4  col-sm-2">
+			
+					<select class="form-control select select-primary" data-toggle="select" tabindex="-1" title="">
+					
+					</select>
+			</div>
+			<div class="visible-xs col-xs-2"></div>
+			<div class="col-sm-1"></div>
+		</div>
 	</div>
 </body>
 </html>
@@ -44,8 +85,28 @@
 <script src="dist/js/jquery.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="dist/js/bootstrap.js"></script>
+
+<script type="text/javascript" src="dist/js/flat-ui.js"></script>
+<script type="text/javascript" src="dist/js/application.js"></script>
 <!--cordova占位js -->
 <script type="text/javascript" src="cordova.js"></script>
 <!--cordova事件处理 -->
 <script type="text/javascript" src="js/index.js"></script>
 <!-- 测试一下 -->
+<script>
+	var selectObj={
+			"A":"1",
+			"2":"2",
+			"3":"3",
+			"4":"4",
+			"5":"5",
+			"6":"6",
+			"7":"7",
+			"8":"8",
+			"9":"9",
+			"10":"10",
+			"J":"10",
+			"Q":"10",
+			"K":"10",
+	}
+</script>
